@@ -10,6 +10,7 @@ import {MatFormFieldModule} from'@angular/material/form-field';
 import{MatStepperModule}from'@angular/material/stepper';
 import {MatInputModule}from'@angular/material/input';
 import {MatSelectModule}from'@angular/material/select';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 
 
@@ -19,11 +20,11 @@ import {MatSelectModule}from'@angular/material/select';
   declarations: [],
   imports: [CommonModule, MatButtonModule,MatCheckboxModule,MatCardModule,MatToolbarModule,
     MatIconModule,MatDialogModule,MatTooltipModule,MatFormFieldModule,MatStepperModule,
-    MatInputModule,MatSelectModule
+    MatInputModule,MatSelectModule,FormsModule, ReactiveFormsModule
   ],
   exports:[CommonModule, MatButtonModule,MatCheckboxModule,MatCardModule,MatToolbarModule,
     MatIconModule,MatDialogModule,MatTooltipModule,MatFormFieldModule,MatStepperModule,
-    MatInputModule,MatSelectModule
+    MatInputModule,MatSelectModule,FormsModule, ReactiveFormsModule
   ]
 })
 export class MaterialModule { }

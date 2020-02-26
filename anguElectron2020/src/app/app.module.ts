@@ -11,19 +11,25 @@ import { PatientsComponent } from './patients/patients.component';
 import {CrudService} from './services/crud.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MaterialModule} from './modules/material/material.module';
+import { EditPatientComponent } from './edit-patient/edit-patient.component';
+import { AddPatientComponent } from './add-patient/add-patient.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PatientsComponent
+    PatientsComponent,
+    EditPatientComponent,
+    AddPatientComponent
   ],
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule.enablePersistence(),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MaterialModule
   ],
+  entryComponents: [EditPatientComponent],
   providers: [CrudService],
   bootstrap: [AppComponent]
 })
